@@ -171,7 +171,9 @@ main #popular-dishes .container .row .product .image .first-txt {
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-decoration: none;
   color: white;
   -webkit-transition: linear;
@@ -205,6 +207,8 @@ main #popular-dishes .container .row .product .title a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 32px;
+  text-align: center;
+  font-style: italic;
 }
 
 main #popular-dishes .container .row .product .title:hover a {
@@ -222,6 +226,10 @@ main #popular-dishes .container .row .product .price {
 
 main #popular-dishes .container .row .product .price p {
   color: #ce1a26;
+}
+
+main #discount {
+  padding: 60px 0px;
 }
 
 main #discount .images {

@@ -1,1 +1,222 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+main #menu {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0))), url("/assets/img/the-pepperoni-classic.jpg");
+  background-image: linear-gradient(to bottom, black, rgba(255, 255, 255, 0)), url("/assets/img/the-pepperoni-classic.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 50px;
+}
+
+main #menu .header {
+  padding-bottom: 50px;
+}
+
+main #menu .header .container h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+main #menu .products .container .row .product {
+  padding: 0;
+}
+
+main #menu .products .container .row .product .image {
+  margin: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+main #menu .products .container .row .product .image img {
+  width: 100%;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  opacity: 1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main #menu .products .container .row .product .image .first-txt {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  -webkit-transition: linear;
+  transition: linear;
+}
+
+main #menu .products .container .row .product .image:hover a img {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #products {
+  padding-top: 50px;
+}
+
+main #products .container .row .about {
+  padding-top: 15px;
+}
+
+main #products .container .row .about .line {
+  width: 60px;
+  height: 5px;
+  background-color: #ce1a26;
+}
+
+main #products .container .row .about .title {
+  padding-top: 15px;
+}
+
+main #products .container .row .about .title h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+main #products .container .row .about .desc {
+  padding-top: 12px;
+}
+
+main #products .container .row .about .desc p {
+  font-size: 14px;
+}
+
+main #products .container .row .product .image {
+  margin: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+main #products .container .row .product .image img {
+  width: 100%;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main #products .container .row .product .image .first-txt {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  -webkit-transition: linear;
+  transition: linear;
+}
+
+main #products .container .row .product .image:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #products .container .row .product .image:hover .first-txt {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+main #products .container .row .product .title a {
+  left: 25%;
+  text-decoration: none;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  text-align: center;
+  font-style: italic;
+  font-size: 26px;
+}
+
+main #products .container .row .product .title:hover a {
+  color: #ce1a26;
+}
+
+main #products .container .row .product .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #products .container .row .product .price p {
+  color: #ce1a26;
+}
+
+main #discount {
+  padding-top: 30px;
+}
+
+main #discount .images {
+  width: 100%;
+}
+
+main #discount .images .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+main #discount .images .image img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@-webkit-keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

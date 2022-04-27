@@ -1,1 +1,370 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+main #header .image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+main #header .image img {
+  width: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@-webkit-keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+main #header .image .first-txt {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 83px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main #header .image .first-txt {
+    font-size: 53px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  main #header .image .first-txt {
+    font-size: 33px;
+  }
+}
+
+main #news {
+  padding-top: 50px;
+}
+
+main #news .left {
+  border-right: 1px solid #ce1a26;
+}
+
+main #news .left .main .image img {
+  width: 100%;
+}
+
+main #news .left .main .title {
+  padding-top: 30px;
+}
+
+main #news .left .main .title h1 {
+  margin: 0;
+}
+
+main #news .left .main .desc {
+  padding-top: 30px;
+}
+
+main #news .left .comments {
+  margin-top: 50px;
+  padding-top: 40px;
+  border: 1px solid #ce1a26;
+  border-radius: 25px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main #news .left .comments .row .image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  main #news .left .comments .row .image img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #news .left .comments .row .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #news .left .comments .row .image img {
+    width: 100px;
+  }
+}
+
+main #news .left .comments .row .comment-name .name {
+  padding-top: 32px;
+  padding-left: 20px;
+}
+
+main #news .left .comments .row .comment-name .comment {
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  main #news .left .comments .row .comment-name {
+    text-align: center;
+  }
+  main #news .left .comments .row .comment-name .name {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+  main #news .left .comments .row .comment-name .comment {
+    padding-top: 25px;
+    padding-left: 05px;
+  }
+}
+
+main #news .left .comment-section .comment-area {
+  padding-top: 50px;
+}
+
+main #news .left .comment-section .comment-area .cmnt {
+  border-radius: 25px;
+  padding: 15px 15px;
+}
+
+main #news .left .comment-section .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #news .left .comment-section .inputs .input {
+  padding-bottom: 25px;
+  width: 100%;
+  padding-right: 5px;
+}
+
+main #news .left .comment-section .inputs .input input {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #ce1a26;
+  padding: 12px 20px;
+}
+
+main #news .left .comment-section .inputs .submit button {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid #ce1a26;
+  padding: 12px 20px;
+  background-color: #ce1a26;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  main #news .left {
+    border: none;
+  }
+}
+
+main #news .right {
+  padding-left: 25px;
+}
+
+main #news .right .line {
+  width: 100%;
+  height: 5px;
+  background-color: #ce1a26;
+  visibility: hidden;
+}
+
+main #news .right .middle {
+  visibility: visible;
+}
+
+main #news .right .title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+main #news .right .title h3 {
+  font-size: 19px;
+  color: #ce1a26;
+}
+
+main #news .right .list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main #news .right .list ul li {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+main #news .right .list ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main #news .right .list ul li:hover a {
+  color: #ce1a26;
+}
+
+@media screen and (max-width: 992px) {
+  main #news .right {
+    padding-left: 0px;
+  }
+  main #news .right .line {
+    visibility: visible;
+  }
+}
+
+main #popular-dishes h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+main #popular-dishes .container .row .product .image {
+  margin: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+main #popular-dishes .container .row .product .image img {
+  width: 100%;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main #popular-dishes .container .row .product .image .first-txt {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  -webkit-transition: linear;
+  transition: linear;
+}
+
+main #popular-dishes .container .row .product .image:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #popular-dishes .container .row .product .image:hover .first-txt {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+main #popular-dishes .container .row .product .title a {
+  left: 25%;
+  text-decoration: none;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  text-align: center;
+  font-style: italic;
+}
+
+main #popular-dishes .container .row .product .title:hover a {
+  color: #ce1a26;
+}
+
+main #popular-dishes .container .row .product .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #popular-dishes .container .row .product .price p {
+  color: #ce1a26;
+}
+
+main #discount {
+  padding-top: 60px;
+}
+
+main #discount .images {
+  width: 100%;
+}
+
+main #discount .images .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+main #discount .images .image img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

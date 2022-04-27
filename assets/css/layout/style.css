@@ -14,7 +14,8 @@ a .up {
   right: 35px;
   width: 40px;
   height: 40px;
-  background-color: #f34f3f;
+  background-color: #ce1a26;
+  border-radius: 5px;
 }
 
 a .up i {
@@ -26,9 +27,7 @@ a .up i {
 }
 
 header nav {
-  background: #333333;
-  background: -webkit-gradient(linear, left top, right top, from(#dd1818), to(#333333));
-  background: linear-gradient(to right, #dd1818, #333333);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,9 +164,10 @@ header nav .container .relative .cl-4 ul li a:hover {
 
 .box {
   width: 100%;
-  background-color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#dd1818), to(#333333));
+  background: linear-gradient(to right, #dd1818, #333333);
   height: 1px;
-  padding-top: 70px;
+  padding-top: 85px;
 }
 
 footer {
@@ -267,6 +267,7 @@ footer .bottom .container .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 footer .bottom .container .title h3 {
@@ -281,6 +282,7 @@ footer .bottom .container .desc {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 footer .bottom .container .desc p {

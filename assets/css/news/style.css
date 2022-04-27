@@ -1,1 +1,172 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+main #header .image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+main #header .image img {
+  width: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@-webkit-keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+main #header .image .first-txt {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 83px;
+}
+
+main #news {
+  padding: 50px 0px;
+}
+
+main #news .news .container .row .nws {
+  padding: 0;
+}
+
+main #news .news .container .row .nws .image {
+  margin: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+main #news .news .container .row .nws .image img {
+  width: 100%;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main #news .news .container .row .nws .image .first-txt {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  -webkit-transition: linear;
+  transition: linear;
+}
+
+main #news .news .container .row .nws .image:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #news .news .container .row .nws .image:hover .first-txt {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+main #news .news .container .row .nws .title a {
+  left: 25%;
+  text-decoration: none;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+}
+
+main #news .news .container .row .nws .title:hover a {
+  color: #ce1a26;
+}
+
+main #news .news .container .row .nws .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #news .news .container .row .nws .desc p {
+  text-align: center;
+}
+
+main #discount {
+  padding-top: 30px;
+}
+
+main #discount .images {
+  width: 100%;
+}
+
+main #discount .images .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+main #discount .images .image img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

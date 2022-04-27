@@ -162,7 +162,8 @@ main {
               opacity: 0;
               position: absolute;
               top: 50%;
-              left: 40%;
+              left: 53%;
+              transform: translate(-50%, -50%);
               text-decoration: none;
               color: white;
               transition: linear;
@@ -191,6 +192,8 @@ main {
               display: flex;
               justify-content: center;
               font-size: 32px;
+              text-align: center;
+              font-style: italic;
             }
 
             &:hover {
@@ -214,6 +217,7 @@ main {
   }
 
   #discount {
+    padding: 60px 0px;
 
     .images {
       width: 100%;
