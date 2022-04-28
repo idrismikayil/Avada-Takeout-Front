@@ -1,3 +1,13 @@
+.box {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .box {
+    display: block;
+  }
+}
+
 main #header .image {
   position: relative;
   overflow: hidden;
@@ -116,6 +126,7 @@ main #news .news .container .row .nws .title a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 32px;
+  text-align: center;
 }
 
 main #news .news .container .row .nws .title:hover a {

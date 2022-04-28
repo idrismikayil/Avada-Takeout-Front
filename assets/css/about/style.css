@@ -1,3 +1,13 @@
+.box {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .box {
+    display: block;
+  }
+}
+
 main #header .image {
   position: relative;
   overflow: hidden;

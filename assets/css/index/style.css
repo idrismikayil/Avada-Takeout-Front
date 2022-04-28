@@ -399,8 +399,10 @@ main #download .images .image img {
 main #download .title-button {
   width: 50%;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50px;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
 }
 
 main #download .title-button span {
@@ -418,7 +420,7 @@ main #download .title-button .button .app-store {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1558px) {
   main #download .title-button {
     top: 25%;
   }
@@ -442,7 +444,7 @@ main #download .title-button .button .app-store {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 866px) {
   main #download .title-button {
     top: 15%;
   }
@@ -600,6 +602,7 @@ main #news .news .container .row .nws .title a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 32px;
+  text-align: center;
 }
 
 main #news .news .container .row .nws .title:hover a {

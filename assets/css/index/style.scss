@@ -384,8 +384,9 @@ main {
     .title-button {
       width: 50%;
       position: absolute;
-      top: 25%;
+      top: 30%;
       left: 50px;
+      transform: translate(0, 50%);
 
       span {
         color: white;
@@ -405,7 +406,7 @@ main {
 
 
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1558px) {
         top: 25%;
 
         span {
@@ -434,7 +435,7 @@ main {
 
       }
 
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 866px) {
         top: 15%;
 
         span {
@@ -597,6 +598,7 @@ main {
                 display: flex;
                 justify-content: center;
                 font-size: 32px;
+                text-align: center;
               }
 
               &:hover {

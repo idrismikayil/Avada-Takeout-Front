@@ -1,53 +1,33 @@
 main {
     #header {
-        .image {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 15%, rgba(121, 9, 70, 1) 53%, rgba(0, 212, 255, 1) 100%);
 
-            img {
-                width: 100%;
-                // background: linear-gradient (to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
-                animation: img_scale 4.2555s infinite;
-            }
+        padding-top: 250px;
+        padding-bottom: 250px;
 
-            @keyframes img_scale {
-                0% {
-                    transform: scale(1) translateZ(0);
-                }
+        .first-txt {
+            // position: absolute;
+            // top: 53%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            color: white;
+            font-size: 83px;
+            text-align: center;
+        }
 
-                50% {
-                    transform: scale(1.05) translateZ(0);
-                }
-
-                100% {
-                    transform: scale(1) translateZ(0);
-                }
-            }
-
+        @media screen and (max-width: 768px) {
             .first-txt {
-                position: absolute;
-                top: 53%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-size: 83px;
-                text-align: center;
+                font-size: 53px;
             }
 
-            @media screen and (max-width: 768px) {
-                .first-txt {
-                    font-size: 53px;
-                }
+        }
 
+        @media screen and (max-width: 485px) {
+            .first-txt {
+                font-size: 33px;
             }
 
-            @media screen and (max-width: 485px) {
-                .first-txt {
-                    font-size: 33px;
-                }
-
-            }
         }
     }
 
@@ -79,14 +59,21 @@ main {
 
             }
 
+            .title {
+                padding-top: 50px;
+            }
+
             .comments {
-                margin-top: 50px;
+                margin-top: 10px;
                 padding-top: 40px;
-                border: 1px solid #ce1a26;
+                // border: 1px solid #ce1a26;
                 border-radius: 25px;
                 padding-bottom: 40px;
                 padding-left: 20px;
                 padding-right: 20px;
+
+                background: rgba(0, 212, 255, 1);
+                background: linear-gradient(90deg, rgba(0, 212, 255, 1) 15%, rgba(121, 9, 70, 1) 53%, rgba(2, 0, 36, 1) 100%);
 
                 .row {
                     .image {
@@ -126,11 +113,13 @@ main {
                         .name {
                             padding-top: 32px;
                             padding-left: 20px;
+                            color: white;
                         }
 
                         .comment {
                             padding-top: 25px;
                             padding-left: 20px;
+                            color: white;
                         }
                     }
 
@@ -210,6 +199,8 @@ main {
 
         .right {
             padding-left: 25px;
+            padding-right: 25px;
+
             .line {
                 width: 100%;
                 height: 5px;
@@ -217,7 +208,7 @@ main {
                 visibility: hidden;
             }
 
-            .middle{
+            .middle {
                 visibility: visible;
             }
 
@@ -257,16 +248,22 @@ main {
 
                 }
             }
+
+            // .imgga{
+            //     width: 170px;
+            //     height: 1000px;
+            // }
         }
+
         @media screen and (max-width: 992px) {
-            .right{
+            .right {
                 padding-left: 0px;
-                .line{
+                padding-right: 0px;
+
+                .line {
                     visibility: visible;
                 }
             }
-
-
         }
     }
 

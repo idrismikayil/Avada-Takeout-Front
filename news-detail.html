@@ -88,11 +88,9 @@
 
     <main>
         <section id="header">
-            <div class="image">
-                <img src="assets/img/food2.jpg" alt="">
-                <h1 class="first-txt">
-                    NEW: The Pancake Burger
-                </h1>
+            <h1 class="first-txt">
+                NEW: The Pancake Burger
+            </h1>
             </div>
         </section>
 
@@ -123,31 +121,59 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="comments">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-4 col-sm-6 col-12 image">
-                                    <img src="assets/img/default-user.png" alt="">
-                                </div>
-                                <div class="col-lg-10 col-md-8 col-sm-6 col-12 comment-name">
-                                    <div class="name">
-                                        Idris Mikayil
+                        <div class="title">
+                            <h3>
+                                COMMENTS: <button type="button" class="btn btn-danger" onclick="myFunction()">SHOW / HIDE</button>
+                            </h3>
+                        </div>
+                        <div class="all" id="myDiv">
+                            <div class="comments">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 image">
+                                        <img src="assets/img/default-user.png" alt="">
                                     </div>
-                                    <div class="comment">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, possimus. Porro
-                                        nam aperiam tempore dolorum rem consectetur mollitia expedita repudiandae,
-                                        repellat, nesciunt unde nisi possimus quis, ab corrupti non illum veniam
-                                        laboriosam accusamus quae nobis. Cumque omnis consectetur sint debitis dolorum
-                                        ducimus delectus sequi magni corporis expedita quibusdam accusamus, aliquid at
-                                        error fugiat ipsa facilis libero eos maxime assumenda odit autem illum? Eos
-                                        adipisci quod dolor possimus laboriosam velit fuga dolores ea. Vitae culpa
-                                        tenetur consectetur placeat nesciunt eum id facere dicta. Facilis blanditiis
-                                        magnam explicabo error voluptatibus laboriosam consequuntur laborum est,
-                                        delectus dignissimos quaerat, voluptas tenetur! Natus reprehenderit ipsa eos
-                                        vel? Tenetur voluptas nulla totam, molestiae blanditiis aspernatur expedita
-                                        exercitationem maxime velit perferendis assumenda quos iure reiciendis rem quod
-                                        enim facilis modi, deleniti doloribus, obcaecati esse omnis voluptatum. Itaque
-                                        eos officiis ea quisquam? Dolore unde aspernatur laboriosam! A tempora provident
-                                        saepe, tenetur sed fuga iste! Necessitatibus, eum! Necessitatibus, voluptas.
+                                    <div class="col-lg-10 col-md-8 col-sm-6 col-12 comment-name">
+                                        <div class="name">
+                                            Idris Mikayil
+                                        </div>
+                                        <div class="comment">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, possimus. Porro
+                                            nam aperiam tempore dolorum rem consectetur mollitia expedita repudiandae,
+                                            repellat, nesciunt unde nisi possimus quis, ab corrupti non illum veniam
+                                            laboriosam accusamus quae nobis. Cumque omnis consectetur sint debitis dolorum
+                                            ducimus delectus sequi magni corporis expedita quibusdam accusamus, aliquid at
+                                            error fugiat ipsa facilis libero eos maxime assumenda odit autem illum? Eos
+                                            adipisci quod dolor possimus laboriosam velit fuga dolores ea. Vitae culpa
+                                            tenetur consectetur placeat nesciunt eum id facere dicta. Facilis blanditiis
+                                            magnam explicabo error voluptatibus laboriosam consequuntur laborum est,
+                                            delectus dignissimos quaerat, voluptas tenetur! Natus reprehenderit ipsa eos
+                                            vel? Tenetur voluptas nulla totam, molestiae blanditiis aspernatur expedita
+                                            exercitationem maxime velit perferendis assumenda quos iure reiciendis rem quod
+                                            enim facilis modi, deleniti doloribus, obcaecati esse omnis voluptatum. Itaque
+                                            eos officiis ea quisquam? Dolore unde aspernatur laboriosam! A tempora provident
+                                            saepe, tenetur sed fuga iste! Necessitatibus, eum! Necessitatibus, voluptas.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 image">
+                                        <img src="assets/img/default-user.png" alt="">
+                                    </div>
+                                    <div class="col-lg-10 col-md-8 col-sm-6 col-12 comment-name">
+                                        <div class="name">
+                                            Name Surname
+                                        </div>
+                                        <div class="comment">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Similique ipsum libero maxime blanditiis.
+                                            At, cumque ab hic error vitae odit eaque dicta iusto
+                                            eum dolore vel praesentium consequatur assumenda optio
+                                            eligendi neque libero. Consectetur quidem rerum aliquid
+                                            amet quia obcaecati at esse ducimus impedit, pariatur
+                                            exercitationem doloribus nam adipisci velit.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -207,6 +233,7 @@
                         <div class="line">
 
                         </div>
+                        <!-- <img src="assets/img/iPhone-wallpapers-illustration-korean-food.png" class="imgga" alt=""> -->
                     </div>
 
 
@@ -411,6 +438,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="assets/js/news-detail.js"></script>
     <script src="assets/js/layout.js"></script>
 
 </body>

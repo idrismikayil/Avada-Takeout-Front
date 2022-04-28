@@ -87,9 +87,8 @@ header nav .container .relative .cl-4 {
   position: fixed;
   right: 0%;
   z-index: 2;
-  background: #b49a3a;
-  background: -webkit-gradient(linear, left top, right top, from(#b49a3a), to(#fd1d1d));
-  background: linear-gradient(90deg, #b49a3a 0%, #fd1d1d 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dd1818), to(#333333));
+  background: linear-gradient(to right, #dd1818, #333333);
   width: 300px;
   -webkit-box-shadow: 0 1px 23.28px 0.72px;
           box-shadow: 0 1px 23.28px 0.72px;

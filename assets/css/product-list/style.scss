@@ -1,3 +1,13 @@
+.box {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .box {
+        display: block;
+    }
+}
+
 main {
     #header {
         .image {
@@ -32,6 +42,21 @@ main {
                 transform: translate(-50%, -50%);
                 color: white;
                 font-size: 83px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 768px) {
+                .first-txt {
+                    font-size: 53px;
+                }
+
+            }
+
+            @media screen and (max-width: 485px) {
+                .first-txt {
+                    font-size: 33px;
+                }
+
             }
         }
     }
@@ -49,7 +74,14 @@ main {
                     border: 1px solid #e8e8e8;
                     padding: 15px;
                     color: #333333;
+                    cursor: pointer;
 
+                }
+            }
+
+            @media (max-width: 768px) {
+                .icons{
+                    display: none;
                 }
             }
         }
@@ -172,10 +204,10 @@ main {
             }
 
             .left {
-                padding-top: 10px;
-                padding-left: 25px;
+                padding-top: 1px;
+                padding-left:12px;
                 padding-bottom: 20px;
-                padding-right: 25px;
+                padding-right: 12px;
 
 
                 .image {

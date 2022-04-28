@@ -1,3 +1,13 @@
+.box {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .box {
+    display: block;
+  }
+}
+
 main #header .image {
   position: relative;
   overflow: hidden;
@@ -48,6 +58,19 @@ main #header .image .first-txt {
           transform: translate(-50%, -50%);
   color: white;
   font-size: 83px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main #header .image .first-txt {
+    font-size: 53px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  main #header .image .first-txt {
+    font-size: 33px;
+  }
 }
 
 main #products .container .icons {
@@ -61,6 +84,13 @@ main #products .container .icons .fa-solid {
   border: 1px solid #e8e8e8;
   padding: 15px;
   color: #333333;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  main #products .container .icons {
+    display: none;
+  }
 }
 
 main #products .listss {
@@ -181,10 +211,10 @@ main #products .grids .right .desc {
 }
 
 main #products .grids .left {
-  padding-top: 10px;
-  padding-left: 25px;
+  padding-top: 1px;
+  padding-left: 12px;
   padding-bottom: 20px;
-  padding-right: 25px;
+  padding-right: 12px;
 }
 
 main #products .grids .left .image {

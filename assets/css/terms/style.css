@@ -1,64 +1,25 @@
-main #header .image {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+main #header {
+  background: #b49a3a;
+  background: -webkit-gradient(linear, left top, right top, from(#b49a3a), color-stop(50%, #fd1d1d), to(#0c0c0c));
+  background: linear-gradient(90deg, #b49a3a 0%, #fd1d1d 50%, #0c0c0c 100%);
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
-main #header .image img {
-  width: 100%;
-  -webkit-animation: img_scale 4.2555s infinite;
-          animation: img_scale 4.2555s infinite;
-}
-
-@-webkit-keyframes img_scale {
-  0% {
-    -webkit-transform: scale(1) translateZ(0);
-            transform: scale(1) translateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(1.05) translateZ(0);
-            transform: scale(1.05) translateZ(0);
-  }
-  100% {
-    -webkit-transform: scale(1) translateZ(0);
-            transform: scale(1) translateZ(0);
-  }
-}
-
-@keyframes img_scale {
-  0% {
-    -webkit-transform: scale(1) translateZ(0);
-            transform: scale(1) translateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(1.05) translateZ(0);
-            transform: scale(1.05) translateZ(0);
-  }
-  100% {
-    -webkit-transform: scale(1) translateZ(0);
-            transform: scale(1) translateZ(0);
-  }
-}
-
-main #header .image .first-txt {
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+main #header .first-txt {
   color: white;
   font-size: 83px;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  main #header .image .first-txt {
+  main #header .first-txt {
     font-size: 53px;
   }
 }
 
 @media screen and (max-width: 485px) {
-  main #header .image .first-txt {
+  main #header .first-txt {
     font-size: 33px;
   }
 }
@@ -92,6 +53,21 @@ main #discount .images .image img {
   height: 100%;
   -webkit-animation: img_scale 4.2555s infinite;
           animation: img_scale 4.2555s infinite;
+}
+
+@-webkit-keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
 }
 
 @keyframes img_scale {
