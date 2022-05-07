@@ -1,1 +1,217 @@
+.box {
+    display: none;
+}
 
+@media (max-width: 992px) {
+    .box {
+        display: block;
+    }
+}
+
+main {
+    #header {
+        .image {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+
+            img {
+                width: 100%;
+                // background: linear-gradient (to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+                animation: img_scale 4.2555s infinite;
+            }
+
+            @keyframes img_scale {
+                0% {
+                    transform: scale(1) translateZ(0);
+                }
+
+                50% {
+                    transform: scale(1.05) translateZ(0);
+                }
+
+                100% {
+                    transform: scale(1) translateZ(0);
+                }
+            }
+
+            .first-txt {
+                position: absolute;
+                top: 53%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 83px;
+            }
+
+            @media screen and (max-width: 576px) {
+                .first-txt {
+                    font-size: 70px;
+
+                }
+            }
+        }
+    }
+
+    #contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .left {
+            border: 3px solid #7B7D7D;
+            border-radius: 10px;
+            width: 30%;
+
+            .icon {
+                display: flex;
+                justify-content: center;
+
+                i {
+                    border: 1px solid black;
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+
+                padding-top: 45px;
+            }
+
+            .title {
+                padding-top: 15px;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            .text {
+                p {
+                    text-align: center;
+                    margin: 0;
+                    padding-bottom: 45px;
+                    color: #ce1a26;
+                }
+            }
+        }
+
+
+
+        .right {
+            border: 3px solid #7B7D7D;
+            border-radius: 10px;
+            margin-left: 3%;
+
+            h1 {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .col-12 {
+                padding-top: 17px;
+                padding-bottom: 17px;
+
+                input {
+                    width: 100%;
+                    border-radius: 25px;
+                    border: 1px solid #e2e2e2;
+                    padding: 12px 20px;
+                }
+
+                textarea {
+                    width: 100%;
+                    border-radius: 25px;
+                    border: 1px solid #e2e2e2;
+                    padding: 12px 20px;
+                }
+
+                .submit {
+                    margin-top: 15px;
+                    border-radius: 25px;
+                    border: none;
+                    padding: 12px 30px;
+                    background-color: #ce1a26;
+                    color: white;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 992px) {
+            .left {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .right {
+                margin: 0;
+                margin-top: 15px;
+            }
+        }
+
+
+        @media screen and (max-width: 576px) {
+            .left {
+                border: none;
+
+                h1 {
+                    font-size: 19px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .right{
+                border: none;
+            }
+        }
+
+        @media screen and (max-width: 390px) {
+            .left {
+                h1 {
+                    font-size: 13px;
+                }
+
+                p {
+                    font-size: 8px;
+                }
+            }
+
+
+        }
+    }
+
+    #discount {
+        padding-top: 30px;
+
+        .images {
+            width: 100%;
+
+            .image {
+                overflow: hidden;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    animation: img_scale 4.2555s infinite;
+                }
+
+                @keyframes img_scale {
+                    0% {
+                        transform: scale(1) translateZ(0);
+                    }
+
+                    50% {
+                        transform: scale(1.05) translateZ(0);
+                    }
+
+                    100% {
+                        transform: scale(1) translateZ(0);
+                    }
+                }
+            }
+        }
+    }
+}

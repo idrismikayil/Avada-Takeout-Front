@@ -1,1 +1,224 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.box {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .box {
+    display: block;
+  }
+}
+
+main #header .image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+main #header .image img {
+  width: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@-webkit-keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+main #header .image .first-txt {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 83px;
+}
+
+@media screen and (max-width: 576px) {
+  main #header .image .first-txt {
+    font-size: 70px;
+  }
+}
+
+main #contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main #contact .left {
+  border: 3px solid #7B7D7D;
+  border-radius: 10px;
+  width: 30%;
+}
+
+main #contact .left .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 45px;
+}
+
+main #contact .left .icon i {
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+main #contact .left .title {
+  padding-top: 15px;
+}
+
+main #contact .left .title h3 {
+  text-align: center;
+}
+
+main #contact .left .text p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 45px;
+  color: #ce1a26;
+}
+
+main #contact .right {
+  border: 3px solid #7B7D7D;
+  border-radius: 10px;
+  margin-left: 3%;
+}
+
+main #contact .right h1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+main #contact .right .col-12 {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+main #contact .right .col-12 input {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #e2e2e2;
+  padding: 12px 20px;
+}
+
+main #contact .right .col-12 textarea {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #e2e2e2;
+  padding: 12px 20px;
+}
+
+main #contact .right .col-12 .submit {
+  margin-top: 15px;
+  border-radius: 25px;
+  border: none;
+  padding: 12px 30px;
+  background-color: #ce1a26;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  main #contact .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #contact .right {
+    margin: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #contact .left {
+    border: none;
+  }
+  main #contact .left h1 {
+    font-size: 19px;
+  }
+  main #contact .left p {
+    font-size: 12px;
+  }
+  main #contact .right {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  main #contact .left h1 {
+    font-size: 13px;
+  }
+  main #contact .left p {
+    font-size: 8px;
+  }
+}
+
+main #discount {
+  padding-top: 30px;
+}
+
+main #discount .images {
+  width: 100%;
+}
+
+main #discount .images .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+main #discount .images .image img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
+}
+
+@keyframes img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
