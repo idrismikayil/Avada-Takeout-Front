@@ -57,6 +57,13 @@ header {
         }
       }
 
+      @media screen and (max-width: 576px) {
+        .logo{
+          margin-left: 25px;
+
+        }
+      }
+
       .options {
         padding: 0;
 
@@ -86,12 +93,22 @@ header {
         }
       }
 
+      @media screen and (max-width: 1200px) {
+        .options {
+          ul {
+
+            margin-left: 200px;
+          }
+        }
+      }
+
       .relative {
         position: relative;
-
+        padding: 8px 0px 0px;
         .hamburger {
           display: none;
           margin-top: 10px;
+         
         }
 
         .cl-4 {
@@ -119,12 +136,15 @@ header {
 
           .x {
             position: relative;
+            padding-bottom: 15px;
 
             .fa-times {
               position: absolute;
               top: 5%;
               right: 8%;
               color: white;
+              padding-top: 15px;
+              
             }
           }
 
@@ -225,6 +245,18 @@ footer {
                   color: #fcdf31;
                 }
               }
+            }
+          }
+        }
+
+        @media screen and (max-width: 992px) {
+          .lists{
+            h3{
+              text-align: center;
+            }
+
+            ul{
+              text-align: center;
             }
           }
         }

@@ -51,8 +51,10 @@ main #thumbnail .images .image img {
 main #thumbnail .title-button {
   width: 30%;
   position: absolute;
-  top: 35%;
-  left: 50px;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 main #thumbnail .title-button span {
@@ -62,7 +64,11 @@ main #thumbnail .title-button span {
   font-weight: 400;
 }
 
-main #thumbnail .title-button a {
+main #thumbnail .title-button .button {
+  padding-top: 15px;
+}
+
+main #thumbnail .title-button .button a {
   width: 58%;
   height: 43px;
   border-radius: 25px;
@@ -75,49 +81,54 @@ main #thumbnail .title-button a {
 }
 
 @media screen and (max-width: 1024px) {
-  main #thumbnail .title-button {
-    top: 25%;
-  }
   main #thumbnail .title-button span {
     font-size: 200%;
   }
-  main #thumbnail .title-button a {
+  main #thumbnail .title-button .button a {
     width: 100px;
     font-size: 7px;
   }
 }
 
-@media screen and (max-width: 568px) {
-  main #thumbnail .title-button {
-    top: 15%;
+@media screen and (max-width: 774px) {
+  main #thumbnail .title-button span {
+    font-size: 150%;
   }
+  main #thumbnail .title-button .button a {
+    width: 100px;
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 581px) {
   main #thumbnail .title-button span {
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 387px) {
-  main #thumbnail .title-button {
-    top: 15%;
-  }
   main #thumbnail .title-button span {
     padding: 25% 0px 50% 0;
-    font-size: 70%;
+  }
+  main #thumbnail .title-button .button {
+    padding: 0;
+    display: none;
   }
 }
 
 @media screen and (max-width: 484px) {
-  main #thumbnail .title-button {
-    top: 5%;
-  }
   main #thumbnail .title-button span {
     padding: 15% 0px 50% 0;
-    font-size: 70%;
+    padding: 0;
+    font-size: 100%;
   }
-  main #thumbnail .title-button a {
+  main #thumbnail .title-button .button {
+    padding: 0;
+  }
+  main #thumbnail .title-button .button a {
     width: 8%;
     font-size: 5px;
-    padding: 4px 6px;
+    padding: 8px 10px;
     height: 43px;
   }
 }
@@ -315,6 +326,42 @@ main #menu .header .container .button a i {
   }
 }
 
+@media screen and (max-width: 381px) {
+  main #menu .header .container .button {
+    padding-left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #menu .header .container .button a {
+    text-align: center;
+    width: 50%;
+    font-size: 10px;
+    padding: 8px 23px;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  main #menu .header .container .button {
+    padding-left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #menu .header .container .button a {
+    text-align: center;
+    width: 50%;
+    font-size: 8px;
+    padding: 10px 23px;
+  }
+}
+
 main #menu .products .container .row .product {
   padding: 0;
 }
@@ -471,10 +518,7 @@ main #download .title-button .button .app-store {
 }
 
 @media screen and (max-width: 303px) {
-  main #download .title-button span {
-    display: none;
-  }
-  main #download .title-button .button a img {
+  main #download {
     display: none;
   }
 }

@@ -35,8 +35,11 @@ main {
     .title-button {
       width: 30%;
       position: absolute;
-      top: 35%;
-      left: 50px;
+      // top: 35%;
+      // left: 50px;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
 
       span {
         color: white;
@@ -45,33 +48,56 @@ main {
         font-weight: 400;
       }
 
-      a {
-        width: 58%;
-        height: 43px;
-        border-radius: 25px;
-        border: none;
-        padding: 12px 23px;
-        background-color: #ce1a26;
-        color: white;
-        font-size: 13px;
-        text-decoration: none;
+      .button {
+        padding-top: 15px;
+
+        a {
+          width: 58%;
+          height: 43px;
+          border-radius: 25px;
+          border: none;
+          padding: 12px 23px;
+          background-color: #ce1a26;
+          color: white;
+          font-size: 13px;
+          text-decoration: none;
+        }
       }
 
+
+
       @media screen and (max-width: 1024px) {
-        top: 25%;
+
 
         span {
           font-size: 200%;
         }
 
-        a {
-          width: 100px;
-          font-size: 7px;
+        .button {
+          a {
+            width: 100px;
+            font-size: 7px;
+          }
         }
       }
 
-      @media screen and (max-width: 568px) {
-        top: 15%;
+      @media screen and (max-width: 774px) {
+
+        span {
+          font-size: 150%;
+        }
+
+        .button {
+          a {
+            width: 100px;
+            font-size: 7px;
+          }
+        }
+
+      }
+
+      @media screen and (max-width: 581px) {
+
 
         span {
           font-size: 100%;
@@ -79,27 +105,35 @@ main {
       }
 
       @media screen and (max-width: 387px) {
-        top: 15%;
+
 
         span {
           padding: 25% 0px 50% 0;
-          font-size: 70%;
+        }
+
+        .button {
+          padding: 0;
+          display: none;
         }
       }
 
       @media screen and (max-width: 484px) {
-        top: 5%;
 
         span {
           padding: 15% 0px 50% 0;
-          font-size: 70%;
+          padding: 0;
+          font-size: 100%;
         }
 
-        a {
-          width: 8%;
-          font-size: 5px;
-          padding: 4px 6px;
-          height: 43px;
+        .button {
+          padding: 0;
+
+          a {
+            width: 8%;
+            font-size: 5px;
+            padding: 8px 10px;
+            height: 43px;
+          }
         }
       }
 
@@ -304,6 +338,36 @@ main {
             }
           }
         }
+
+        @media screen and (max-width: 381px) {
+          .button {
+            padding-left: 0%;
+            display: flex;
+            justify-content: center;
+
+            a {
+              text-align: center;
+              width: 50%;
+              font-size: 10px;
+              padding: 8px 23px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 316px) {
+          .button {
+            padding-left: 0%;
+            display: flex;
+            justify-content: center;
+
+            a {
+              text-align: center;
+              width: 50%;
+              font-size: 8px;
+              padding: 10px 23px;
+            }
+          }
+        }
       }
     }
 
@@ -463,23 +527,17 @@ main {
         }
       }
 
-      @media screen and (max-width: 303px) {
 
-
-        span {
-          display: none;
-        }
-
-        .button {
-          a {
-            img {
-              display: none;
-            }
-          }
-        }
-      }
 
     }
+  }
+
+  @media screen and (max-width: 303px) {
+
+    #download {
+      display: none;
+    }
+
   }
 
   #news {
