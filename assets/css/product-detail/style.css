@@ -80,7 +80,7 @@ main #product {
 }
 
 main #product .image {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -90,7 +90,7 @@ main #product .image img {
 }
 
 main #product .desc {
-  padding-top: 130px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 

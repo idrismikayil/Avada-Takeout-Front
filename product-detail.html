@@ -46,7 +46,7 @@
                             </li>
                             <li><a href="">SIGN IN</a>
                             </li>
-                            <li><a href="">CART</a>
+                            <li><a href="cart.html">CART</a>
                             </li>
                         </ul>
                     </div>
@@ -90,7 +90,7 @@
         <section id="header">
             <div class="image">
                 <img src="assets/img/subpage-ptb-scaled.jpg" alt="">
-                <h1 class="first-txt">
+                <h1 class="first-txt product-name" id="p-name-1">
                     Avocado Smash Toast
                 </h1>
             </div>
@@ -98,13 +98,17 @@
 
         <section id="product">
             <div class="container">
+                
                 <div class="row">
+                    <div class="alert alert-success mt-5" role="alert" id="success-alert" style="display: none">
+                        Add Product Successful.
+                    </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 image">
-                        <img src="assets/img/avocado-toast.webp" alt="">
+                        <img src="assets/img/avocado-toast.webp" class="product_image" id="p-img-1" alt="">
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 desc">
                         <div class="price">
-                            <p>$<span>5.99</span></p>
+                            <p>$<span class="product-price" id="p-price-1" name="5.99">5.99</span></p>
                         </div>
                         <div class="desc-title">
                             <h5>Description</h5>
@@ -125,12 +129,12 @@
                         <div class="count-input">
                             <div class="number">
                                 <span class="minus">-</span>
-                                <input type="text" value="1" />
+                                <input type="text" value="1" id="p-count-1" class="product-count" id="product-count-1" />
                                 <span class="plus">+</span>
                             </div>
                         </div>
                         <div class="submit">
-                            <button type="submit">ADD TO CART</button>
+                            <button type="submit" name="1" class="addToCartBtn">ADD TO CART</button>
                         </div>
                         <div class="coupon">
                             <img src="assets/img/coupon-image-600x292.png" alt="">
@@ -437,6 +441,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/product-detail.js"></script>
     <script src="assets/js/layout.js"></script>
+    <script src="assets/js/local-storage.js"></script>
 
 </body>
 

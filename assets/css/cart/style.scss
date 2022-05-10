@@ -8,7 +8,7 @@
     }
 }
 
-main{
+main {
     #header {
         .image {
             position: relative;
@@ -45,4 +45,164 @@ main{
             }
         }
     }
+
+    #products {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .border {
+            border: 1px solid black;
+
+            .title {
+                .product {
+                    display: flex;
+                    align-items: center;
+                    h3 {
+                        margin: 0;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        margin: 0;
+                    }
+                }
+
+                .quantity {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        margin: 0;
+                    }
+                }
+
+                .total {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        margin: 0;
+                        text-align: center;
+                    }
+                }
+
+                .delete {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .container {
+                .line {
+                    width: 100%;
+                    background-color: #aaa;
+                    height: 1px;
+                    padding: 0px;
+                }
+            }
+
+            .main {
+                .product {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 120px;
+                            flex-direction: column;
+                            
+                        }
+                    }
+
+                    .title {
+                        justify-content: center;
+                       h5{
+                           padding-left: 10px;
+                           padding-right: 10px;
+                           margin: 0;
+                        text-align: center;
+
+                       }
+                    }
+                }
+                .price{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .quantity{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .total{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .delete{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    // #products {
+    //     margin-top: 50px;
+    //     margin-bottom: 50px;
+
+    //     table {
+    //         border: 1px solid #aaa;
+    //         border-radius: 25px;
+    //         width: 100%;
+    //         height: 300px;
+    //         padding: 20px;
+
+    //         thead {
+    //             tr {
+    //                 th {
+    //                     text-align: center;
+    //                     padding: 20px;
+
+    //                 }
+    //             }
+    //         }
+
+    //         tbody {
+    //             tr {
+    //                 td {
+    //                     text-align: center;
+    //                     padding: 20px;
+    //                 }
+
+    //                 .first {
+    //                     width: 25%;
+    //                     img{
+    //                         width: 100%;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    // }
+
+
 }
