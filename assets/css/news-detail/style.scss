@@ -7,10 +7,6 @@ main {
         padding-bottom: 250px;
 
         .first-txt {
-            // position: absolute;
-            // top: 53%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
             color: white;
             font-size: 83px;
             text-align: center;
@@ -71,33 +67,16 @@ main {
                 padding-bottom: 40px;
                 padding-left: 20px;
                 padding-right: 20px;
-
-                // background: rgba(0, 212, 255, 1);
-                // background: linear-gradient(90deg, rgba(0, 212, 255, 1) 15%, rgba(121, 9, 70, 1) 53%, rgba(2, 0, 36, 1) 100%);
-               background-color:  #DBDEDE;
+                background-color: #DBDEDE;
 
                 .row {
                     .image {
                         img {
                             width: 100%;
-
                         }
-
-
                     }
 
                     @media screen and (max-width: 992px) {
-                        .image {
-
-                            img {
-                                width: 50%;
-                            }
-                        }
-
-
-                    }
-
-                    @media screen and (max-width: 576px) {
                         .image {
                             display: flex;
                             justify-content: center;
@@ -112,8 +91,18 @@ main {
 
                     .comment-name {
                         .name {
-                            padding-top: 32px;
+                            padding-top: 16px;
                             padding-left: 20px;
+                        }
+
+                        .date-time {
+                            padding-top: 15px;
+                            padding-left: 20px;
+                            display: flex;
+    
+                            span {
+                                padding-right: 15px;
+                            }
                         }
 
                         .comment {
@@ -122,7 +111,7 @@ main {
                         }
                     }
 
-                    @media screen and (max-width: 576px) {
+                    @media screen and (max-width: 992px) {
                         .comment-name {
                             text-align: center;
 
@@ -130,14 +119,17 @@ main {
                                 padding-top: 32px;
                                 padding-left: 0px;
                             }
-
+                            .date-time {
+                                display: flex;
+                                justify-content: center;
+                                padding-left: 0px;
+    
+                            }
                             .comment {
                                 padding-top: 25px;
                                 padding-left: 05px;
                             }
                         }
-
-
 
                     }
                 }
@@ -247,11 +239,6 @@ main {
 
                 }
             }
-
-            // .imgga{
-            //     width: 170px;
-            //     height: 1000px;
-            // }
         }
 
         @media screen and (max-width: 992px) {

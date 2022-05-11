@@ -219,12 +219,6 @@ main #comments .comments .row .image img {
 }
 
 @media screen and (max-width: 992px) {
-  main #comments .comments .row .image img {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 576px) {
   main #comments .comments .row .image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,8 +233,20 @@ main #comments .comments .row .image img {
 }
 
 main #comments .comments .row .comment-name .name {
-  padding-top: 32px;
+  padding-top: 16px;
   padding-left: 20px;
+}
+
+main #comments .comments .row .comment-name .date-time {
+  padding-top: 15px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #comments .comments .row .comment-name .date-time span {
+  padding-right: 15px;
 }
 
 main #comments .comments .row .comment-name .comment {
@@ -248,12 +254,21 @@ main #comments .comments .row .comment-name .comment {
   padding-left: 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   main #comments .comments .row .comment-name {
     text-align: center;
   }
   main #comments .comments .row .comment-name .name {
     padding-top: 32px;
+    padding-left: 0px;
+  }
+  main #comments .comments .row .comment-name .date-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 0px;
   }
   main #comments .comments .row .comment-name .comment {

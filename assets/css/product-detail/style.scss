@@ -201,34 +201,16 @@ main {
             padding-left: 20px;
             padding-right: 20px;
             margin-bottom: 15px;
-
-
-            // background: rgb(255, 214, 5);
-            // background: linear-gradient(90deg, rgba(255, 214, 5, 1) 29%, rgba(255, 0, 0, 1) 71%, rgba(221, 80, 80, 1) 100%);
             background-color: #DBDEDE;
 
             .row {
                 .image {
                     img {
                         width: 100%;
-
                     }
-
-
                 }
 
                 @media screen and (max-width: 992px) {
-                    .image {
-
-                        img {
-                            width: 50%;
-                        }
-                    }
-
-
-                }
-
-                @media screen and (max-width: 576px) {
                     .image {
                         display: flex;
                         justify-content: center;
@@ -237,15 +219,23 @@ main {
                             width: 100px;
                         }
                     }
-
-
                 }
 
                 .comment-name {
                     .name {
-                        padding-top: 32px;
+                        padding-top: 16px;
                         padding-left: 20px;
                         // color: white;
+                    }
+
+                    .date-time {
+                        padding-top: 15px;
+                        padding-left: 20px;
+                        display: flex;
+
+                        span {
+                            padding-right: 15px;
+                        }
                     }
 
                     .comment {
@@ -255,13 +245,20 @@ main {
                     }
                 }
 
-                @media screen and (max-width: 576px) {
+                @media screen and (max-width: 992px) {
                     .comment-name {
                         text-align: center;
 
                         .name {
                             padding-top: 32px;
                             padding-left: 0px;
+                        }
+
+                        .date-time {
+                            display: flex;
+                            justify-content: center;
+                            padding-left: 0px;
+
                         }
 
                         .comment {
@@ -385,6 +382,7 @@ main {
 
     #popular-dishes {
         padding-bottom: 120px;
+
         h1 {
             text-align: center;
             padding-bottom: 2%;

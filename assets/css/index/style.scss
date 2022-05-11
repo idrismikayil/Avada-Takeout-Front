@@ -35,8 +35,6 @@ main {
     .title-button {
       width: 30%;
       position: absolute;
-      // top: 35%;
-      // left: 50px;
       top: 50%;
       left: 20%;
       transform: translate(-50%, -50%);
@@ -64,11 +62,7 @@ main {
         }
       }
 
-
-
       @media screen and (max-width: 1024px) {
-
-
         span {
           font-size: 200%;
         }

@@ -67,12 +67,6 @@ main #news .left .comments .row .image img {
 }
 
 @media screen and (max-width: 992px) {
-  main #news .left .comments .row .image img {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 576px) {
   main #news .left .comments .row .image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,8 +81,20 @@ main #news .left .comments .row .image img {
 }
 
 main #news .left .comments .row .comment-name .name {
-  padding-top: 32px;
+  padding-top: 16px;
   padding-left: 20px;
+}
+
+main #news .left .comments .row .comment-name .date-time {
+  padding-top: 15px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #news .left .comments .row .comment-name .date-time span {
+  padding-right: 15px;
 }
 
 main #news .left .comments .row .comment-name .comment {
@@ -96,12 +102,21 @@ main #news .left .comments .row .comment-name .comment {
   padding-left: 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   main #news .left .comments .row .comment-name {
     text-align: center;
   }
   main #news .left .comments .row .comment-name .name {
     padding-top: 32px;
+    padding-left: 0px;
+  }
+  main #news .left .comments .row .comment-name .date-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 0px;
   }
   main #news .left .comments .row .comment-name .comment {
