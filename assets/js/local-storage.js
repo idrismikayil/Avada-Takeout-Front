@@ -27,7 +27,6 @@ function AddCart(e) {
     }
 
     AddCartsToStorage(cart);
-    ShowAlert();
 }
 
 function GetCartsFromStorage() {
@@ -54,13 +53,6 @@ function DeleteCartFromStorage(id) {
     carts.splice(id, 1);
     localStorage.setItem("carts", JSON.stringify(carts));
     FillDetailTable();
-}
-
-function ShowAlert() {
-    $("#success-alert").show();
-    setTimeout(function () {
-        $("#success-alert").hide();
-    }, 2000);
 }
 
 function FillDetailTable() {

@@ -251,6 +251,12 @@ main {
         }
     }
 
+    @media (max-width: 768px) {
+        #products{
+            padding-top: 35px;
+        }
+    }
+
     #discount {
         padding-top: 30px;
 

@@ -263,6 +263,12 @@ main #products .grids .left .image:hover .first-txt {
           transition-timing-function: linear;
 }
 
+@media (max-width: 768px) {
+  main #products {
+    padding-top: 35px;
+  }
+}
+
 main #discount {
   padding-top: 30px;
 }
