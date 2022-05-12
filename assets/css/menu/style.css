@@ -83,6 +83,10 @@ main #products .container .row .about .title h3 a {
   color: black;
 }
 
+main #products .container .row .about .title:hover h3 a {
+  color: #ce1a26;
+}
+
 main #products .container .row .about .desc {
   padding-top: 12px;
 }
