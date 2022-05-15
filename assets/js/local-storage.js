@@ -64,7 +64,15 @@ function FillDetailTable() {
         document.getElementById('selected-products').innerHTML = html
     }
 
-    let total_all_price = '';
-    total_all_price = '0'
-    document.getElementById('all-price-total').innerText = total_all_price;
+    Total();
+}
+
+function Total() {
+    let carts = GetCartsFromStorage();
+    let sum = 0;
+    for (let i = 0; i < carts.length; i++) {
+        sum += parseFloat(carts[i].total_price);
+    }
+
+    document.getElementById('all-price-total').innerText = sum.toFixed(2);
 }
