@@ -124,8 +124,7 @@ main {
                     .image {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
-
+                        
                         img {
                             width: 120px;
                         }
@@ -139,6 +138,12 @@ main {
                                 flex-direction: column;
                             align-items: center;
                             }
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        .image{
+                            justify-content: center;
                         }
                     }
 

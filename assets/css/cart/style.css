@@ -172,9 +172,6 @@ main #products .border .main .product .image {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 main #products .border .main .product .image img {
@@ -192,6 +189,14 @@ main #products .border .main .product .image .title h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  main #products .border .main .product .image {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 main #products .border .main .price {
