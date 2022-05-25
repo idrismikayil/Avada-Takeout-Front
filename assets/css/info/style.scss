@@ -8,32 +8,33 @@
     }
 }
 
-main {
+
+main{
     #header {
         .image {
             position: relative;
             overflow: hidden;
             width: 100%;
-
+    
             img {
                 width: 100%;
                 animation: img_scale 4.2555s infinite;
             }
-
+    
             @keyframes img_scale {
                 0% {
                     transform: scale(1) translateZ(0);
                 }
-
+    
                 50% {
                     transform: scale(1.05) translateZ(0);
                 }
-
+    
                 100% {
                     transform: scale(1) translateZ(0);
                 }
             }
-
+    
             .first-txt {
                 position: absolute;
                 top: 53%;
@@ -43,37 +44,29 @@ main {
                 font-size: 83px;
                 text-align: center;
             }
+
+            @media (max-width: 500px) {
+                .first-txt{
+                    font-size: 55px;
+                }
+            }
         }
     }
-
-    #about {
-        padding: 50px 0px;
-
-        .left {
-            padding-top: 60px;
-            
-            .subtitle {
-                color: #ce1a26;
-                padding-bottom: 20px;
-            }
-
-            .line {
-                width: 80px;
-                height: 3px;
-                background-color: #ce1a26;
-            }
-
-            .desc{
-                padding-top: 20px;
-            }
-        }
-
-        .right {
-            padding-top: 50px;
+    
+    #logos {
+        margin-top: 50px;
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
             img {
                 width: 100%;
+    
             }
         }
+    
     }
 
     #discount {

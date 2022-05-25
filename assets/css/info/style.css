@@ -61,34 +61,29 @@ main #header .image .first-txt {
   text-align: center;
 }
 
-main #about {
-  padding: 50px 0px;
+@media (max-width: 500px) {
+  main #header .image .first-txt {
+    font-size: 55px;
+  }
 }
 
-main #about .left {
-  padding-top: 60px;
+main #logos {
+  margin-top: 50px;
 }
 
-main #about .left .subtitle {
-  color: #ce1a26;
-  padding-bottom: 20px;
+main #logos .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main #about .left .line {
-  width: 80px;
-  height: 3px;
-  background-color: #ce1a26;
-}
-
-main #about .left .desc {
-  padding-top: 20px;
-}
-
-main #about .right {
-  padding-top: 50px;
-}
-
-main #about .right img {
+main #logos .logo img {
   width: 100%;
 }
 
