@@ -252,6 +252,7 @@ main #comments .comments .row .comment-name .date-time span {
 main #comments .comments .row .comment-name .comment {
   padding-top: 25px;
   padding-left: 20px;
+  overflow-wrap: break-word;
 }
 
 @media screen and (max-width: 992px) {
