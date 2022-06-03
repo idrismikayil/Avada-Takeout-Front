@@ -26,7 +26,16 @@ a {
       color: white;
     }
   }
+
+
 }
+@media screen and (max-width: 1024px) {
+  .navigateTop {
+    display: none;
+  }
+}
+
+
 
 header {
   nav {
@@ -48,7 +57,7 @@ header {
       }
 
       @media screen and (max-width: 576px) {
-        .logo{
+        .logo {
           margin-left: 25px;
 
         }
@@ -95,6 +104,7 @@ header {
       .relative {
         position: relative;
         padding: 8px 0px 0px;
+
         .hamburger {
           display: none;
           margin-top: 10px;
@@ -234,12 +244,12 @@ footer {
         }
 
         @media screen and (max-width: 992px) {
-          .lists{
-            h3{
+          .lists {
+            h3 {
               text-align: center;
             }
 
-            ul{
+            ul {
               text-align: center;
             }
           }
@@ -277,6 +287,8 @@ footer {
   @media screen and (max-width: 576px) {
 
     .top {
+      display: none;
+
       .container {
         .row {
           .lists {
