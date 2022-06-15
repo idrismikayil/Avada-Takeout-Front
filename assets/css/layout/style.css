@@ -226,7 +226,7 @@ footer .top .container .row .lists ul li a img {
   width: 150px;
 }
 
-footer .top .container .row .lists ul li:hover a {
+footer .top .container .row .lists ul li a:hover {
   color: #fcdf31;
 }
 
