@@ -29,6 +29,7 @@ a {
 
 
 }
+
 @media screen and (max-width: 1024px) {
   .navigateTop {
     display: none;
@@ -407,3 +408,16 @@ footer {
     }
   }
 }
+
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ce1a26;
+}
+
