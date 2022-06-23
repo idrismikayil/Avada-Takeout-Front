@@ -616,6 +616,12 @@ main #news .news .container .row .nws .title:hover a {
   color: #ce1a26;
 }
 
+@media screen and (max-width: 500px) {
+  main #news .news .container .row .nws .title a {
+    font-size: 20px;
+  }
+}
+
 main #news .news .container .row .nws .desc {
   display: -webkit-box;
   display: -ms-flexbox;

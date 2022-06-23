@@ -70,6 +70,12 @@ main #latest-dishes .container .row .product .title:hover a {
   color: #ce1a26;
 }
 
+@media screen and (max-width: 500px) {
+  main #latest-dishes .container .row .product .title a {
+    font-size: 20px;
+  }
+}
+
 main #latest-dishes .container .row .product .price {
   display: -webkit-box;
   display: -ms-flexbox;

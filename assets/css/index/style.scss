@@ -108,6 +108,7 @@ main {
       .title-button {
         transform: translate(-50%, -50%);
         top: 45%;
+
         .title {
           font-size: 13px;
           padding: 0;
@@ -629,6 +630,14 @@ main {
                 }
               }
             }
+
+            @media screen and (max-width: 500px) {
+              .title {
+                  a {
+                      font-size: 20px;
+                  }
+              }
+          }
 
             .desc {
               display: flex;
