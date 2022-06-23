@@ -97,6 +97,8 @@ main #news .news .container .row .nws .image .first-txt {
   color: white;
   -webkit-transition: linear;
   transition: linear;
+  font-size: 14px;
+  text-align: center;
 }
 
 main #news .news .container .row .nws .image:hover img {
